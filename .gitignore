@@ -1,0 +1,14 @@
+.idea/
+.venv/
+.vscode/
+.project/
+.pydevproject/
+build/
+unused_resources/
+image_user/
+temp/
+config.ini
+database_v2.db
+error.log
+ffmpeg_converter.bat
+minecraft_soundreplacer.code-workspace
