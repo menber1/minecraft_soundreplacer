@@ -1,8 +1,8 @@
 .idea/
 .venv/
 .vscode/
-.project/
-.pydevproject/
+.project
+.pydevproject
 build/
 unused_resources/
 image_user/
