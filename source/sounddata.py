@@ -136,8 +136,6 @@ class SoundData(wx.Panel):
     def set_sourcepath(self, sourcepath):
         self.path_sourcefile = sourcepath
         self.statictext_replacesound.set_label(sourcepath)
-
-        # If the music file path is invalid, write the same in glayout sounddata_bgm.py
         if os.path.isfile(self.path_sourcefile):
             self.statictext_replacesound.SetForegroundColour(wx.BLACK)
         else:

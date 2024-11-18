@@ -11,7 +11,7 @@ from source.window_sound import SoundWindow
 class StartWindow(wx.Frame):
 
     def __init__(self):
-        wx.Frame.__init__(self, None, -1, 'Minecraft SoundReplacer v0.9.1b')
+        wx.Frame.__init__(self, None, -1, 'Minecraft SoundReplacer v0.9.2b')
 
         self.SetBackgroundColour(wx.WHITE)
         self.SetSize(ConfigManager().get_size_startwindow())

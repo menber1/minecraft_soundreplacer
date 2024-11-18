@@ -7,11 +7,11 @@ class PathSettingWindow(wx.Dialog):
     WIDTH = 850
     HEIGHT = 90
 
-    def __init__(self, sounddata_bgm, path, message):
-        wx.Frame.__init__(self, sounddata_bgm, -1, 'setting path - ' + message, size=(self.WIDTH, self.HEIGHT))
+    def __init__(self, sounddata, path, message):
+        wx.Frame.__init__(self, sounddata, -1, 'setting path - ' + message, size=(self.WIDTH, self.HEIGHT))
 
         self.SetBackgroundColour(wx.WHITE)
-        self.sounddata_bgm = sounddata_bgm
+        self.sounddata = sounddata # SoundData or SoundDataBGM
         self.path = path
 
         self.textctrl = wx.TextCtrl(self, -1, path, pos=(15, 15), size=(740, 23))
@@ -59,10 +59,10 @@ class PathSettingWindow(wx.Dialog):
         ans = self.validate(path)
 
         if ans == "blank":
-            self.sounddata_bgm.set_sourcepath('')
+            self.sounddata.set_sourcepath('')
             self.Close()
         elif ans == "yes audiofile":
-            self.sounddata_bgm.set_sourcepath(path)
+            self.sounddata.set_sourcepath(path)
             self.Close()
         elif ans == "not exist":
             Message().show(self, "存在しないファイルパスです。")
