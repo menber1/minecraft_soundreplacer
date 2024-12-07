@@ -10,21 +10,21 @@ class VanillaResourcePack():
 
     def get_pathlist(self, name):
         if name == 'records':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/music/game/records/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/music/game/records/*.ogg'
         elif name == 'menu':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/music/menu/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/music/menu/*.ogg'
         elif name == 'game':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/music/game/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/music/game/*.ogg'
         elif name == 'creative':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/music/game/creative/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/music/game/creative/*.ogg'
         elif name == 'end':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/music/game/end/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/music/game/end/*.ogg'
         elif name == 'nether':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/music/game/nether/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/music/game/nether/*.ogg'
         elif name == 'water':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/music/game/water/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/music/game/water/*.ogg'
         elif name == 'note':
-            path = './Vanilla_Resource_Pack_1.21.0/sounds/note/*.ogg'
+            path = './Vanilla_Resource_Pack_BE/sounds/note/*.ogg'
         else:
             print('VanillaResourcePack().get_pathlist() return []')
             return []
@@ -37,10 +37,10 @@ class VanillaResourcePack():
         return pathlist
 
     def get_sound_definitions_json(self):
-        return './Vanilla_Resource_Pack_1.21.0/sounds/sound_definitions.json'
+        return './Vanilla_Resource_Pack_BE/sounds/sound_definitions.json'
 
     def get_sounds_json(self):
-        return './Vanilla_Resource_Pack_1.21.0/sounds.json'
+        return './Vanilla_Resource_Pack_BE/sounds.json'
 
     def get_sounds_json_JE(self):
-        return './Vanilla_Resource_Pack_1.21_JE/assets/minecraft/sounds.json'
+        return './Vanilla_Resource_Pack_JE/assets/minecraft/sounds.json'

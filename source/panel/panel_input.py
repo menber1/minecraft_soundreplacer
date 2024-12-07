@@ -472,7 +472,7 @@ class PanelInput(wx.Panel):
 
     def _manifest_in_blankpack(self, name, description, header_uuid, modules_uuid, version):
 
-        json_template = './Vanilla_Resource_Pack_1.21.0/manifest.json'
+        json_template = './Vanilla_Resource_Pack_BE/manifest.json'
         json_new = './temp/manifest.json'
 
         version = self.convert_int_version(version)
