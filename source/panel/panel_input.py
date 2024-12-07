@@ -99,6 +99,7 @@ class PanelInput(wx.Panel):
                                             pos=(215, 220))
         v = ConfigManager().get_select_version()
         self.combobox_version.SetStringSelection(v)
+        self.combobox_version.SetToolTip('JE用version設定')
 
         self.radiobutton_JE = wx.RadioButton(self, -1, 'JE', pos=(300, 225))
         self.radiobutton_BE = wx.RadioButton(self, -1, 'BE', pos=(340, 225))
