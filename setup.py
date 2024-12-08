@@ -1,16 +1,16 @@
 from cx_Freeze import setup, Executable
 
-runfile = 'minecraft_soundreplacer.py'
+runfile = 'soundreplacer.py'
 icon = 'image\\icon_frame.ico'
 
 setup(
-    name='minecraft_soundreplacer',
+    name='soundreplacer',
     version='0.1',
     description='',
     executables=[Executable(runfile, icon=icon, base='Win32GUI')],
     options={
         'build_exe': {
-            'build_exe': 'build\\minecraft_soundreplacer',
+            'build_exe': 'build\\soundreplacer',
             'packages': ['source'],
             'include_files': ['url.csv',
                               'Vanilla_Resource_Pack_BE\\',

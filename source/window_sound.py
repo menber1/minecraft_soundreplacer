@@ -31,7 +31,7 @@ class SoundWindow(wx.Frame):
             windowtitle = 'new resourcepack'
         else:
             windowtitle = data_for_panelinput[1]
-        self.SetTitle('Minecraft SoundReplacer :  ' + windowtitle)
+        self.SetTitle('SoundReplacer :  ' + windowtitle)
         x, y = startwindow.GetPosition()
         self.SetPosition((x + 50, y + 50))
         self.startwindow = startwindow
