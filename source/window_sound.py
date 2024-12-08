@@ -37,7 +37,7 @@ class SoundWindow(wx.Frame):
         self.startwindow = startwindow
 
         element_array = (
-        'records', 'menu', 'game', 'creative', 'end', 'nether', 'water', 'note', 'bgm ( original )', 'se ( original )')
+        'records', 'menu', 'game', 'creative', 'end', 'nether', 'water', 'note', 'bgm ( original )', 'se ( original )', 'export')
         self.combobox = wx.ComboBox(self, wx.ID_ANY, choices=element_array, style=wx.CB_DROPDOWN | wx.CB_READONLY,
                                     pos=(25, 10), size=(110, 25))
         self.combobox.Select(0)
@@ -112,8 +112,11 @@ class SoundWindow(wx.Frame):
             self.switch_panel(self.panel_bgm)
         elif name == 'se ( original )':
             self.switch_panel(self.panel_se)
+        elif name == 'export':
+            self.switch_panel(self.panel_input)
 
     def click_next(self, event):
+        self.combobox.Select(10)
         self.button_next.Hide()
         self.switch_panel(self.panel_input)
 
