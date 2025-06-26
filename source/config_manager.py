@@ -160,14 +160,14 @@ class ConfigManager:
         config = configparser.ConfigParser()
 
         config['export'] = {
-            'edition': 'JE',
+            'edition': 'BE',
             'zip_compression': True,
             'select_version': '',
             'savefolder': ''
         }
 
         config['packformat'] = {
-            'list_packformat': '1.21.4,46|1.21.3,42|1.21,34|1.20.6,32|1.20.4,22|1.20.2,18|1.20,15|1.19.4,13|1.19.3,12|1.19,9|1.18,8|1.17,7|1.16,6'
+            'list_packformat': '1.21.6,63|1.21.5,55|1.21.4,46|1.21.3,42|1.21,34|1.20.6,32|1.20.4,22|1.20.2,18|1.20,15|1.19.4,13|1.19.3,12|1.19,9|1.18,8|1.17,7|1.16,6'
         }
 
         config['window'] = {
@@ -180,11 +180,12 @@ class ConfigManager:
         }
 
         config['music'] = {
-            'record': '11,13,5,blocks,cat,chirp,creator,creator_music_box,far,mall,mellohi,otherside,pigstep,precipice,relic,stal,strad,wait,ward',
+            'record': '11,13,5,blocks,cat,chirp,creator,creator_music_box,far,mall,mellohi,otherside,pigstep,precipice,relic,stal,strad,wait,ward,tears',
             'menu': 'menu1,menu2,menu3,menu4',
             'game': 'a_familiar_room,aerie,ancestry,an_ordinary_day,bromeliad,calm1,calm2,calm3,comforting_memories,'
                     'crescent_dunes,deeper,echo_in_the_wind,eld_unknown,endless,featherfall,firebugs,floating_dream,hal1,hal2,hal3,hal4,infinite_amethyst,'
-                    'komorebi,labyrinthine,left_to_bloom,nuance1,nuance2,one_more_day,piano1,piano2,piano3,pokopoko,puzzlebox,stand_tall,watcher,wending,yakusoku',
+                    'komorebi,labyrinthine,left_to_bloom,nuance1,nuance2,one_more_day,piano1,piano2,piano3,pokopoko,puzzlebox,stand_tall,watcher,wending,yakusoku,'
+                    'broken_clocks,below_and_above,os_piano,fireflies,lilypad',
             'creative': 'creative1,creative2,creative3,creative4,creative5,creative6',
             'end': 'boss,credits,end',
             'nether': 'chrysopoeia,nether1,nether2,nether3,nether4,rubedo,so_below',

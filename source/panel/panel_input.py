@@ -323,7 +323,6 @@ class PanelInput(wx.Panel):
                 shutil.make_archive(savepath_temp_name, 'zip', root_dir='./temp')
                 shutil.move(savepath_temp_name + '.zip', savepath_name + '.mcpack')
                 os.rmdir(savepath_temp)
-
             else:
                 shutil.copytree('./temp', savepath_name)
 

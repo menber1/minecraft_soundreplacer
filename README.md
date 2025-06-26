@@ -5,7 +5,7 @@ SoundReplacer
 
 /////////////////////////////////////////////////////////////////////////////////
 
-Version : 0.9.3b
+Version : 0.9.4b
 
 License : GNU GENERAL PUBLIC LICENSE Version 3
  

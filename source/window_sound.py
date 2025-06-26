@@ -113,6 +113,7 @@ class SoundWindow(wx.Frame):
         elif name == 'se ( original )':
             self.switch_panel(self.panel_se)
         elif name == 'export':
+            self.button_next.Hide()
             self.switch_panel(self.panel_input)
 
     def click_next(self, event):
