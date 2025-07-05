@@ -12,3 +12,4 @@ database_v2.db
 error.log
 ffmpeg_converter.bat
 minecraft_soundreplacer.code-workspace
+requirements.txt

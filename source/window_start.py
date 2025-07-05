@@ -11,7 +11,7 @@ from source.window_sound import SoundWindow
 class StartWindow(wx.Frame):
 
     def __init__(self):
-        wx.Frame.__init__(self, None, -1, 'SoundReplacer v0.9.4b')
+        wx.Frame.__init__(self, None, -1, 'SoundReplacer v0.9.5b')
 
         self.SetBackgroundColour(wx.WHITE)
         self.SetSize(ConfigManager().get_size_startwindow())
